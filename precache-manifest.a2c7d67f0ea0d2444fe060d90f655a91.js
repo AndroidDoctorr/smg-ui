@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5fcd85dc6970f05114c6af3835eb7f01",
+    "revision": "7adca9a7cf9d1a166caf44139ca72e27",
     "url": "/smg-ui/index.html"
   },
   {
-    "revision": "cff028ac71354b731294",
-    "url": "/smg-ui/static/css/main.d1b05096.chunk.css"
+    "revision": "2160051d192cb26bdadd",
+    "url": "/smg-ui/static/css/main.8ab6f918.chunk.css"
   },
   {
     "revision": "385c5a10c2724bcefe62",
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smg-ui/static/js/2.97a93156.chunk.js.LICENSE"
   },
   {
-    "revision": "cff028ac71354b731294",
-    "url": "/smg-ui/static/js/main.bba57704.chunk.js"
+    "revision": "2160051d192cb26bdadd",
+    "url": "/smg-ui/static/js/main.b3f6bdbb.chunk.js"
   },
   {
     "revision": "09519696c27de29edcc7",
     "url": "/smg-ui/static/js/runtime-main.93ea715d.js"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/smg-ui/static/media/logo.5d5d9eef.svg"
+    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
+    "url": "/smg-ui/static/media/logo.ee7cd8ed.svg"
   }
 ]);
