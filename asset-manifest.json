@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/smg-ui/static/css/main.d1b05096.chunk.css",
+    "main.js": "/smg-ui/static/js/main.bba57704.chunk.js",
+    "main.js.map": "/smg-ui/static/js/main.bba57704.chunk.js.map",
+    "runtime-main.js": "/smg-ui/static/js/runtime-main.93ea715d.js",
+    "runtime-main.js.map": "/smg-ui/static/js/runtime-main.93ea715d.js.map",
+    "static/js/2.97a93156.chunk.js": "/smg-ui/static/js/2.97a93156.chunk.js",
+    "static/js/2.97a93156.chunk.js.map": "/smg-ui/static/js/2.97a93156.chunk.js.map",
+    "index.html": "/smg-ui/index.html",
+    "precache-manifest.6eb020aad62f069e9d9b3f000e196fab.js": "/smg-ui/precache-manifest.6eb020aad62f069e9d9b3f000e196fab.js",
+    "service-worker.js": "/smg-ui/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/smg-ui/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.97a93156.chunk.js.LICENSE": "/smg-ui/static/js/2.97a93156.chunk.js.LICENSE",
+    "static/media/logo.svg": "/smg-ui/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93ea715d.js",
+    "static/js/2.97a93156.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.bba57704.chunk.js"
+  ]
+}
