@@ -1,0 +1,94 @@
+.layout-container {
+  background-color: #ffffff;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.layout-header {
+  background-color: #eee;
+  margin-top: -1rem;
+  flex: 0;
+}
+
+.layout-titleRow {
+  padding: 1rem;
+}
+
+.layout-title {}
+
+.layout-subtitle {
+  font-size: 14pt;
+  margin: 0 1rem;
+}
+
+.layout-navbar {
+
+}
+
+.layout-navLink {
+  background-color: #503050;
+  color: white;
+  width: 10rem;
+  height: 1.1rem;
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: thin solid black;
+  z-index: 10;
+}
+
+.layout-navLink--selected {
+  background-color: #ffffff;
+  color: #503050;
+  border-bottom: none;
+  position: relative;
+  top: 1.1rem;
+  z-index: 11;
+}
+
+.layout-navLink--selected.layout-navLink:last-child >
+  div.layout-navlinkBottom {
+  width: 13rem;
+  border-right: thin solid black;
+}
+
+.layout-navLink--selected.layout-navLink:last-child >
+  div.layout-navlinkBottom >
+  div.layout-navlinkBottomRight {
+  display: none;
+}
+
+.layout-navlinkBottom {
+  background-color: #ffffff;
+  margin-left: -2rem;
+  width: 14rem;
+  height: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.layout-navlinkBottom > div {
+  background-color: #503050;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  margin-top: -1rem;
+}
+
+.layout-navlinkBottomLeft {
+  left: -1rem;
+}
+
+.layout-navlinkBottomRight {
+  right: -1rem;
+}
+
+.layout-body {
+  flex: 1;
+  padding: 1rem 1rem 0 1rem;
+}
