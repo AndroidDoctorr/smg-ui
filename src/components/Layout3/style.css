@@ -1,20 +1,20 @@
-.layout-container {
+.layout3-container {
   background-color: #ffffff;
   height: 100vh;
   flex-direction: column;
   display: flex;
 }
 
-.layout-header {
+.layout3-header {
   background-color: #ffffff;
   flex: 0;
 }
 
-.layout-titleRow {
+.layout3-titleRow {
   height: 7rem;
 }
 
-.layout-titleBackdrop {
+.layout3-titleBackdrop {
   display: block;
   position: absolute;
   width: 100%;
@@ -23,40 +23,52 @@
   opacity: 0.2;
 }
 
-.layout-title {
+.layout3-title {
   margin: 1rem 4rem;
   position: relative;
 }
 
-.layout-subtitle {
+.layout3-subtitle {
   font-size: 14pt;
   margin: 0 4rem;
   position: relative;
 }
 
-.layout-navbar {
+.layout3-navbar {
   background-color: #503050;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  width: 4rem;
 }
 
-.layout-navLink {
+.layout3-navbar--open {
+  width: auto;
+}
+
+.layout3-navbarHeader {
+  height: 8rem;
+}
+
+.layout3-navLink {
   color: white;
   width: 10rem;
   height: 1.1rem;
   display: inline-block;
   padding: 1rem;
-  text-align: center;
   text-decoration: none;
   z-index: 10;
 }
 
-.layout-navLink--selected {
+.layout3-navLink--selected {
   background-color: #ffffff;
   color: #503050;
   position: relative;
   z-index: 11;
 }
 
-.layout-body {
+.layout3-body {
   flex: 1;
   padding: 1rem 1rem 0 1rem;
 }

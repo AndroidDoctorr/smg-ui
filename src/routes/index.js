@@ -2,8 +2,9 @@ import Home from './Home/';
 import Harvest from './Harvest';
 import ManualHarvest from './ManualHarvest';
 import Orders from './Orders';
-import Planting from './Planting';
+import PlantingLog from './PlantingLog';
 import Reports from './Reports';
+import Suppliers from './Suppliers/';
 import FoodSafetyForms from './FoodSafetyForms';
 
 export default function routes() {
@@ -34,9 +35,9 @@ export default function routes() {
     },
     {
       pathname: '/planting-log',
-      name: 'Manual Planting',
+      name: 'Planting Log',
       id: 'planting',
-      component: Planting,
+      component: PlantingLog,
     },
     {
       pathname: '/food-safety-plan-logs-forms',
@@ -49,6 +50,12 @@ export default function routes() {
       name: 'Reports',
       id: 'reports',
       component: Reports,
+    },
+    {
+      pathname: '/suppliers',
+      name: 'Suppliers',
+      id: 'suppliers',
+      component: Suppliers,
     },
   ]);
 }

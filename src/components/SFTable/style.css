@@ -1,0 +1,67 @@
+.sfTable {
+  width: 100%;
+  max-width: 90%;
+  font-size: 14pt;
+}
+
+.sfTable-container {
+  padding: 1rem 2rem 0 2rem;
+}
+
+.sfTable-head {
+}
+
+.sfTable-headRow {
+  display: flex;
+}
+
+.sfTable-column {
+  flex: 1;
+  border: thin solid #88aa88;
+  padding: 0.5rem 0;
+}
+
+.sfTable-column--shrink {
+  flex: unset;
+  width: 5rem;
+}
+
+.sfTable-body {
+
+}
+
+.sfTable-row {
+  display: flex;
+}
+
+.sfTable-row:nth-child(2n) {
+  background-color: #eeffee;
+}
+
+.sfTable-cell {
+  flex: 1;
+  text-align: center;
+  height: 2.5rem;
+}
+
+.sfTable-cell--shrink {
+  flex: unset;
+  width: 5rem;
+}
+
+.sfTable-deleteButton {
+  background-color: #cc3333;
+  border: thin solid black;
+  color: white;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.sfTable-deleteButton:hover {
+  cursor: pointer;
+  background-color: #ff3333;
+}
+
+.sfTable-cellInput {
+  font-size: 14pt;
+}

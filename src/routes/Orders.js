@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout/';
+import Layout3 from '../components/Layout3/';
 
 function Orders(props) {
   return (
-    <Layout>
+    <Layout3>
       <div className="home">
         HARVEST
       </div>
-    </Layout>
+    </Layout3>
   );
 }
 

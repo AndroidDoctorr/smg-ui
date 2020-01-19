@@ -1,0 +1,127 @@
+.suppliers {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.suppliers-body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.suppliers-tabBar {
+  display: flex;
+}
+
+.suppliers-tab {
+  border: none;
+  flex: 1;
+  height: 3rem;
+  font-size: 16pt;
+}
+
+.suppliers-tab--active {
+  background-color: #008800;
+  color: #ffffff;
+}
+
+.suppliers-orderContainer {
+  height: 2rem;
+  text-align: right;
+  margin: 1rem;
+}
+
+.suppliers-listItemContainer {
+
+}
+
+.suppliers-listItem {
+  border: thin solid #aaa;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.suppliers-listItemImageContainer {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.suppliers-listItemImage {
+  height: 100%;
+  width: 100%;
+}
+
+.suppliers-listItemLinkContainer {
+  display: inline-block;
+  margin: auto 1rem;
+  flex: 1;
+}
+
+.suppliers-listItemLink {
+  font-size: 18pt;
+}
+
+.suppliers-listItemLinkIcon {
+  margin-left: 1rem;
+  font-size: 18pt;
+  color: #008800;
+}
+
+.suppliers-listItemSubCount {
+  display: inline-block;
+  margin: auto 1rem;
+  font-size: 14pt;
+}
+
+.suppliers-listItemExpandButton {
+  display: inline-block;
+  float: right;
+  margin: auto 1rem;
+  width: 3rem;
+  border: none;
+  font-size: 24pt;
+  color: #008800;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.1s ease-in-out;
+  outline: none;
+}
+
+.suppliers-listItemExpandButton--open {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: 0.1s ease-in-out;
+}
+
+.collapseList {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.collapseList--open {
+  max-height: 10rem;
+}
+
+.collapseList-item {
+  margin-left: 1rem;
+  font-size: 14pt;
+  padding: 0.5rem;
+  display: flex;
+  border: thin solid #ddd;
+}
+
+.collapseList-itemIcon {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.collapseList-itemName {
+  display: inline-block;
+  margin: auto 1rem;
+}

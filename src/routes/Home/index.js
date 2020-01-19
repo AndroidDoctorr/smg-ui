@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import Layout from '../../components/Layout/';
 import './style.css';
 
@@ -13,4 +12,4 @@ function Home(props) {
   );
 }
 
-export default withRouter(Home);
+export default Home;

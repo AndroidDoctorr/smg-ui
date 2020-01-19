@@ -16,3 +16,17 @@ h1 {
   color: #004400;
   margin: 1rem;
 }
+
+h2 {
+  margin-left: 2rem;
+}
+
+.button-clear {
+  color: -webkit-link;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  font-size: 14pt;
+  color: #228822;
+}
