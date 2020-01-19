@@ -3,6 +3,7 @@
   height: 100vh;
   flex-direction: column;
   display: flex;
+  padding-left: 4rem;
 }
 
 .layout3-header {
@@ -41,24 +42,44 @@
   height: 100vh;
   position: absolute;
   width: 4rem;
+  transition: width 0.1s ease-out;
+  margin-left: -4rem;
 }
 
 .layout3-navbar--open {
-  width: auto;
+  width: 16rem;
+}
+
+.layout3-navbar--open > .layout3-navbarHeader {
+  width: 16rem;
 }
 
 .layout3-navbarHeader {
   height: 8rem;
+  width: 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 24pt;
+  color: #ffffff;
+}
+
+.layout3-navbarSubheader {
+  margin-top: 1rem;
+  font-size: 16pt;
 }
 
 .layout3-navLink {
   color: white;
-  width: 10rem;
-  height: 1.1rem;
-  display: inline-block;
-  padding: 1rem;
+  height: 3rem;
+  display: flex;
   text-decoration: none;
   z-index: 10;
+  width: 4rem;
+}
+
+.layout3-navbar--open > .layout3-navLink {
+  width: 16rem;
 }
 
 .layout3-navLink--selected {
@@ -66,6 +87,49 @@
   color: #503050;
   position: relative;
   z-index: 11;
+}
+
+.layout3-navLinkName {
+  margin: auto 1rem;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+.layout3-navLinkIconContainer {
+  display: flex;
+  width: 4rem;
+  margin: auto;
+}
+
+.layout3-navLinkIconContainer > .layout3-navLinkIcon {
+  margin: auto;
+  width: 4rem;
+}
+
+.layout3-navToggle {
+  height: 5rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ffffff;
+  font-size: 24pt;
+  outline: none;
+  cursor: pointer;
+}
+
+.layout3-navToggleClosed {
+  display: none;
+}
+
+.layout3-navToggleOpen {
+  display: inline-block;
+}
+
+.layout3-navToggle--open > .layout3-navToggleClosed {
+  display: inline-block;
+}
+
+.layout3-navToggle--open > .layout3-navToggleOpen {
+  display: none;
 }
 
 .layout3-body {

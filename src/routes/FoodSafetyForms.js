@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout2 from '../components/Layout2/';
+import Layout from '../components/Layout3/';
 
 function FoodSafetyForms(props) {
   return (
-    <Layout2>
+    <Layout>
       <div className="home">
         Food Safety Forms
       </div>
-    </Layout2>
+    </Layout>
   );
 }
 

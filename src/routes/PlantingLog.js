@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import moment from 'moment';
-import Layout from '../components/Layout/';
+import Layout from '../components/Layout3/';
 import SFTable from '../components/SFTable/';
 
 function removeItems(items, index) {

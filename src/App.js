@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       {/* This is to reduce the app to just suppliers until more routes become available */}
-      {true ?
+      {false ?
         <Route
           exact={true}
           path={'/suppliers'}

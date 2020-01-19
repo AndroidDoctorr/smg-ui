@@ -3,7 +3,7 @@ import { withRouter, Link } from 'react-router-dom';
 import routes from '../../routes';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRandom } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleRight, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class Layout extends React.Component {
 
   toggleMenu() {
     const navRef = this.navRef.current;
-    const navToggleRef = this.navRef.current;
+    const navToggleRef = this.navToggleRef.current;
     navRef.classList.toggle('layout3-navbar--open');
     navToggleRef.classList.toggle('layout3-navToggle--open');
   }
@@ -38,7 +38,10 @@ class Layout extends React.Component {
 
         <div className="layout3-navbar" ref={this.navRef}>
           <div className="layout3-navbarHeader">
-            {"Super Micro Greens"}
+            {"Super Farm Software"}
+            <div className="layout3-navbarSubheader">
+              {"by Super Micro Greens"}
+            </div>
           </div>
           {routes().map(route =>
             route.id === "suppliers" ?
@@ -48,17 +51,19 @@ class Layout extends React.Component {
               to={route.pathname}
               className={route.pathname === pathname ? "layout3-navLink layout3-navLink--selected" : "layout3-navLink"}
             >
-              <div>{route.name}</div>
-              {route.pathname === pathname &&
-                <div className="layout3-navlinkBottom">
-                  <div className="layout3-navlinkBottomLeft" />
-                  <div className="layout3-navlinkBottomRight" />
-                </div>
-              }
+              <div className="layout3-navLinkIconContainer">
+                <FontAwesomeIcon className="layout3-navLinkIcon fa-2x" icon={route.icon} />
+              </div>
+              <div className="layout3-navLinkName">{route.name}</div>
             </Link>
           )}
-          <button className="layout3-navToggle" ref={this.navToggleRef}>
-            <FontAwesomeIcon icon={faRandom} />
+          <button
+            className="layout3-navToggle"
+            ref={this.navToggleRef}
+            onClick={() => this.toggleMenu()}
+          >
+            <FontAwesomeIcon className="layout3-navToggleOpen" icon={faChevronCircleRight} />
+            <FontAwesomeIcon className="layout3-navToggleClosed" icon={faChevronCircleLeft} />
           </button>
         </div>
 
