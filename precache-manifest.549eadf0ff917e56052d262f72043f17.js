@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6edcac95181dab0b0517470022d02c2",
+    "revision": "75352d626752df0db173420b831177ee",
     "url": "/smg-ui/index.html"
   },
   {
-    "revision": "a73d2d20648b882e98fa",
-    "url": "/smg-ui/static/css/main.03acc76c.chunk.css"
+    "revision": "0411b64313284d067f1c",
+    "url": "/smg-ui/static/css/main.888600dc.chunk.css"
   },
   {
-    "revision": "bc50fb8dba1df6826b5e",
-    "url": "/smg-ui/static/js/2.b2e79e2f.chunk.js"
+    "revision": "5d7229c7dc3a25499226",
+    "url": "/smg-ui/static/js/2.30abdaf6.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/smg-ui/static/js/2.b2e79e2f.chunk.js.LICENSE"
+    "url": "/smg-ui/static/js/2.30abdaf6.chunk.js.LICENSE"
   },
   {
-    "revision": "a73d2d20648b882e98fa",
-    "url": "/smg-ui/static/js/main.2c709c9c.chunk.js"
+    "revision": "0411b64313284d067f1c",
+    "url": "/smg-ui/static/js/main.6092de10.chunk.js"
   },
   {
     "revision": "9ed632e5e969d0c15244",
