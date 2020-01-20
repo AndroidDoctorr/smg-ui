@@ -23,19 +23,7 @@ class Layout extends React.Component {
   render() {
     const { pathname } = this.props.location;
     return (
-      <div className="layout3-container">
-        <div className="layout3-header">
-          <div className="layout3-titleBackdrop" />
-          <div className="layout3-titleRow">
-            <h1 className="layout3-title">
-              {"SUPER FARM SOFTWARE"}
-            </h1>
-            <div className="layout3-subtitle">
-              {"by Super Micro Greens! Farm Management Software for Everyone!"}
-            </div>
-          </div>
-        </div>
-
+      <div className="layout3">
         <div className="layout3-navbar" ref={this.navRef}>
           <div className="layout3-navbarHeader">
             {"Super Farm Software"}
@@ -67,8 +55,22 @@ class Layout extends React.Component {
           </button>
         </div>
 
-        <div className="layout3-body">
-          {this.props.children}
+        <div className="layout3-container">
+          <div className="layout3-header">
+            <div className="layout3-titleBackdrop" />
+            <div className="layout3-titleRow">
+              <h1 className="layout3-title">
+                {"SUPER FARM SOFTWARE"}
+              </h1>
+              <div className="layout3-subtitle">
+                {"by Super Micro Greens! Farm Management Software for Everyone!"}
+              </div>
+            </div>
+          </div>
+
+          <div className="layout3-body">
+            {this.props.children}
+          </div>
         </div>
       </div>
     );

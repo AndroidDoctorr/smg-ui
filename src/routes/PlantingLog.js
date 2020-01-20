@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import moment from 'moment';
+// import moment from 'moment';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 import Layout from '../components/Layout3/';
 import SFTable from '../components/SFTable/';
 
@@ -55,7 +57,7 @@ function PlantingLog(props) {
       name: "Test Crop",
       quantity: 123,
       timeframe: 14,
-      timestamp: moment().format("MM/DD/YY"),
+      timestamp: new Date(),
       lots: "122-123",
     },
     {
@@ -64,7 +66,7 @@ function PlantingLog(props) {
       name: "Test Crop",
       quantity: 123,
       timeframe: 14,
-      timestamp: moment().format("MM/DD/YY"),
+      timestamp: new Date(),
       lots: "122-123",
     },
     {
@@ -73,7 +75,7 @@ function PlantingLog(props) {
       name: "Test Crop",
       quantity: 123,
       timeframe: 14,
-      timestamp: moment().format("MM/DD/YY"),
+      timestamp: new Date(),
       lots: "122-123",
     },
     {
@@ -82,7 +84,7 @@ function PlantingLog(props) {
       name: "Test Crop",
       quantity: 123,
       timeframe: 14,
-      timestamp: moment().format("MM/DD/YY"),
+      timestamp: new Date(),
       lots: "122-123",
     },
     {
@@ -91,16 +93,21 @@ function PlantingLog(props) {
       name: "Test Crop",
       quantity: 123,
       timeframe: 14,
-      timestamp: moment().format("MM/DD/YY"),
+      timestamp: new Date(),
       lots: "122-123",
     },
   ];
 
   const [items, setItems] = useState(initialItems);
+  const [date, setDate] = useState(new Date());
 
   return (
     <Layout>
       <h2>{"Planting Log"}</h2>
+      <DatePicker
+        selected={date}
+        onChange={date => setDate(date)}
+      />
       <SFTable
         items={items}
         columns={columns}

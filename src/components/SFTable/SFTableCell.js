@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 import './style.css';
 
 function SFTableCell(props) {
@@ -26,7 +28,20 @@ function SFTableCell(props) {
         </td>
       );
     case "date":
+      return (
+        <td className="sfTable-cell">
+          {value.format("MM/DD/YY")}
+        </td>
+      );
     case "editDate":
+      return (
+        <td className="sfTable-cell">
+          <DatePicker
+            selected={value}
+            onChange={date => setValue(date)}
+          />
+        </td>
+      );
     case "number":
     case "editNumber":
     case "range":
