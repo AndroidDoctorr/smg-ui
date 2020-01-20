@@ -5,6 +5,9 @@ import Suppliers from './routes/Suppliers';
 
 function App() {
   return (
+    <Suppliers />
+  );
+  return (
     <Router>
       {/* This is to reduce the app to just suppliers until more routes become available */}
       {true ?
