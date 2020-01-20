@@ -7,10 +7,10 @@ function App() {
   return (
     <Router>
       {/* This is to reduce the app to just suppliers until more routes become available */}
-      {false ?
+      {true ?
         <Route
           exact={true}
-          path={'/suppliers'}
+          path={'/'}
           key={'suppliers'}
           component={Suppliers}
         />
