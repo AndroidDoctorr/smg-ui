@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/smg-ui/static/css/main.888600dc.chunk.css",
-    "main.js": "/smg-ui/static/js/main.6092de10.chunk.js",
-    "main.js.map": "/smg-ui/static/js/main.6092de10.chunk.js.map",
+    "main.js": "/smg-ui/static/js/main.66416051.chunk.js",
+    "main.js.map": "/smg-ui/static/js/main.66416051.chunk.js.map",
     "runtime-main.js": "/smg-ui/static/js/runtime-main.34662ab6.js",
     "runtime-main.js.map": "/smg-ui/static/js/runtime-main.34662ab6.js.map",
     "static/js/2.30abdaf6.chunk.js": "/smg-ui/static/js/2.30abdaf6.chunk.js",
     "static/js/2.30abdaf6.chunk.js.map": "/smg-ui/static/js/2.30abdaf6.chunk.js.map",
     "index.html": "/smg-ui/index.html",
-    "precache-manifest.549eadf0ff917e56052d262f72043f17.js": "/smg-ui/precache-manifest.549eadf0ff917e56052d262f72043f17.js",
+    "precache-manifest.c44c74e12c704f91cf8627e4e7d14b23.js": "/smg-ui/precache-manifest.c44c74e12c704f91cf8627e4e7d14b23.js",
     "service-worker.js": "/smg-ui/service-worker.js",
     "static/css/main.888600dc.chunk.css.map": "/smg-ui/static/css/main.888600dc.chunk.css.map",
     "static/js/2.30abdaf6.chunk.js.LICENSE": "/smg-ui/static/js/2.30abdaf6.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.34662ab6.js",
     "static/js/2.30abdaf6.chunk.js",
     "static/css/main.888600dc.chunk.css",
-    "static/js/main.6092de10.chunk.js"
+    "static/js/main.66416051.chunk.js"
   ]
 }

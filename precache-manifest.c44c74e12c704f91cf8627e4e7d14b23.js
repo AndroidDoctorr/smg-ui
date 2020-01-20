@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75352d626752df0db173420b831177ee",
+    "revision": "2ccf7811631025b81c071ce94af2e195",
     "url": "/smg-ui/index.html"
   },
   {
-    "revision": "0411b64313284d067f1c",
+    "revision": "c1bee55bbbe39b22f638",
     "url": "/smg-ui/static/css/main.888600dc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smg-ui/static/js/2.30abdaf6.chunk.js.LICENSE"
   },
   {
-    "revision": "0411b64313284d067f1c",
-    "url": "/smg-ui/static/js/main.6092de10.chunk.js"
+    "revision": "c1bee55bbbe39b22f638",
+    "url": "/smg-ui/static/js/main.66416051.chunk.js"
   },
   {
     "revision": "9ed632e5e969d0c15244",
