@@ -5,7 +5,7 @@ function FoodSafetyForms(props) {
   return (
     <Layout>
       <div className="home">
-        Food Safety Forms
+        <h2>{"Food Safety Forms"}</h2>
       </div>
     </Layout>
   );

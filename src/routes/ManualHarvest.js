@@ -5,7 +5,7 @@ function ManualHarvest(props) {
   return (
     <Layout>
       <div className="home">
-        Manual Harvest
+        <h2>{"Manual Harvest Log"}</h2>
         {Object.keys(props).map(key =>
           <div>{key + ": " + props[key]}</div>
         )}

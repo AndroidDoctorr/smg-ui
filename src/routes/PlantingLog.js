@@ -100,7 +100,7 @@ function PlantingLog(props) {
 
   return (
     <Layout>
-      <h2>Planting Log</h2>
+      <h2>{"Planting Log"}</h2>
       <SFTable
         items={items}
         columns={columns}

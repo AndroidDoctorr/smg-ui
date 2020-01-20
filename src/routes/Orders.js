@@ -5,7 +5,7 @@ function Orders(props) {
   return (
     <Layout3>
       <div className="home">
-        HARVEST
+        <h2>{"Standing Orders"}</h2>
       </div>
     </Layout3>
   );
