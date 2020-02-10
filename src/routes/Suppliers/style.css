@@ -1,85 +1,136 @@
-.suppliers {
+body {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1 {
+  color: #004400;
+  margin: 1rem;
+  font-size: 24pt;
+}
+
+p {
+  margin: 0 1rem;
+  font-size: 16pt;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.t-05 {
+  top: 0.5rem;
+  position: relative;
+}
+
+.products {
   background-color: #ffffff;
   height: 100%;
 }
 
-.suppliers-body {
-  width: 90%;
+.products-header {
+  width: 80%;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
-.suppliers-tabBar {
+.products-body {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1500px;
+}
+
+.products-tabBar {
   display: flex;
 }
 
-.suppliers-tab {
+.products-tab {
   border: none;
   flex: 1;
   height: 3rem;
   font-size: 16pt;
 }
 
-.suppliers-tab--active {
+.products-tab--active {
   background-color: #008800;
   color: #ffffff;
 }
 
-.suppliers-orderContainer {
+.products-filterContainer {
   height: 2rem;
   text-align: right;
   margin: 1rem;
+  font-size: 16pt;
 }
 
-.suppliers-listItemContainer {
+.products-filterToggle {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.products-textSearch {
+  font-size: 16pt;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.products-listItemContainer {
 
 }
 
-.suppliers-listItem {
+.products-listItem {
   border: thin solid #aaa;
   border-radius: 0.25rem;
   padding: 0.5rem;
   display: flex;
 }
 
-.suppliers-listItemImageContainer {
+.products-listItemIcon {
+  height: 32;
+  width: 32;
+  margin-right: 1rem;
+  float: right;
+}
+
+.products-categoryIconContainer {
   width: 5rem;
   height: 5rem;
   display: inline-block;
   margin-right: 1rem;
 }
 
-.suppliers-listItemImage {
+.products-categoryIcon {
   height: 100%;
   width: 100%;
 }
 
-.suppliers-listItemLinkContainer {
+.products-listItemLinkContainer {
   display: inline-block;
   margin: auto 1rem;
   flex: 1;
+  font-size: 20pt;
+  font-weight: 500;
 }
 
-.suppliers-listItemLink {
-  font-size: 18pt;
-}
-
-.suppliers-listItemLinkIcon {
+.products-listItemLinkIcon {
   margin-left: 1rem;
   font-size: 18pt;
   color: #008800;
 }
 
-.suppliers-listItemSubCount {
+.products-listItemSubCount {
   display: inline-block;
   margin: auto 1rem;
   font-size: 14pt;
 }
 
-.suppliers-listItemExpandButton {
+.products-listItemExpandButton {
   display: inline-block;
   float: right;
   margin: auto 1rem;
-  width: 3rem;
+  padding: 0;
+  height: 2rem;
+  width: 2rem;
   border: none;
   font-size: 24pt;
   color: #008800;
@@ -88,7 +139,7 @@
   outline: none;
 }
 
-.suppliers-listItemExpandButton--open {
+.products-listItemExpandButton--open {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -104,7 +155,8 @@
 }
 
 .collapseList--open {
-  max-height: 10rem;
+  max-height: 50rem;
+  overflow-y: scroll;
 }
 
 .collapseList-item {
@@ -117,11 +169,82 @@
 
 .collapseList-itemIcon {
   display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .collapseList-itemName {
   display: inline-block;
   margin: auto 1rem;
+  font-size: 16pt;
+  font-weight: 500;
+  width: 100%;
+}
+
+.collapseList-itemLink {
+  /* float: right; */
+  margin-left: 2rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #008800;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #008800;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
