@@ -57,7 +57,7 @@ p {
 }
 
 .products-filterContainer {
-  height: 2rem;
+  height: 3rem;
   text-align: right;
   margin: 1rem;
   font-size: 16pt;
@@ -110,6 +110,7 @@ p {
   flex: 1;
   font-size: 20pt;
   font-weight: 500;
+  color: #004400;
 }
 
 .products-listItemLinkIcon {
@@ -165,6 +166,10 @@ p {
   padding: 0.5rem;
   display: flex;
   border: thin solid #ddd;
+}
+
+.collapseList-item:nth-child(2n+1){
+  background-color: #efffef;
 }
 
 .collapseList-itemIcon {
