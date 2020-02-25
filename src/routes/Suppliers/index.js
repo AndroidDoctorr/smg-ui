@@ -71,7 +71,7 @@ class Suppliers extends React.Component {
               <div className="products-filterToggle">
                 <img
                   src="https://img.icons8.com/ios/100/000000/organic-food.png"
-                  className="mr-1 t-05"
+                  className="mr-05 t-05"
                   alt="Organic"
                   height={32}
                   width={32}
@@ -89,7 +89,7 @@ class Suppliers extends React.Component {
               <div className="products-filterToggle">
                 <img
                   src={require("../../images/heirloom.png")}
-                  className="mr-1 t-05"
+                  className="mr-05 t-05"
                   alt="Heirloom"
                   height={32}
                   width={32}
@@ -106,7 +106,7 @@ class Suppliers extends React.Component {
               </div>
               <div className="products-filterToggle">
                 <FontAwesomeIcon
-                  className="mr-1"
+                  className="mr-05"
                   icon={faDna}
                   size="lg"
                 />
