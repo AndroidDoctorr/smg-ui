@@ -83,6 +83,7 @@ p {
   border-radius: 0.25rem;
   padding: 0.5rem;
   display: flex;
+  cursor: pointer;
 }
 
 .products-listItemIcon {
@@ -166,6 +167,8 @@ p {
   padding: 0.5rem;
   display: flex;
   border: thin solid #ddd;
+  text-decoration: none;
+  color: black;
 }
 
 .collapseList-item:nth-child(2n+1){

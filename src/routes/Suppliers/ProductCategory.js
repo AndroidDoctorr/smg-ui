@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactTooltip from 'react-tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faChevronCircleDown, faDna } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +18,12 @@ export default class ProductCategory extends React.Component {
 
   renderProductListItem(item, key) {
     return (
-      <div className="collapseList-item" key={key}>
+      <a href={item.buy_url}
+        className="collapseList-item"
+        target="_blank"
+        rel="noopener noreferrer"
+        key={key}
+      >
         <img
           className="collapseList-itemIcon"
           src={item.image_url}
@@ -25,17 +31,6 @@ export default class ProductCategory extends React.Component {
         />
         <div className="collapseList-itemName">
           {item.name}
-          <a href={item.buy_url}
-            className="collapseList-itemLink"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {"Link"}
-            <FontAwesomeIcon
-              className="products-listItemLinkIcon"
-              icon={faExternalLinkAlt}
-            />
-          </a>
           {item.organic &&
             <img
               src="https://img.icons8.com/ios/100/000000/organic-food.png"
@@ -62,7 +57,7 @@ export default class ProductCategory extends React.Component {
             />
           }
         </div>
-      </div>
+      </a>
     );
   }
 
@@ -84,7 +79,10 @@ export default class ProductCategory extends React.Component {
   render() {
     return (
       <div className="products-listItemContainer">
-        <div className="products-listItem">
+        <div
+          className="products-listItem"
+          onClick={() => this.toggleList()}
+        >
           <div className="products-categoryIconContainer">
             {/*
             // TODO: Create a list of icons for categories
@@ -108,13 +106,12 @@ export default class ProductCategory extends React.Component {
           <div className="products-listItemSubCount">
             {"(" + Object.keys(this.props.items).length + " products)"}
           </div>
-          <button
+          <div
             className="products-listItemExpandButton products-listItemExpandButton--open"
-            onClick={() => this.toggleList()}
             ref={this.toggleRef}
           >
             <FontAwesomeIcon icon={faChevronCircleDown} />
-          </button>
+          </div>
         </div>
         <div className="products-listItemSubList">
           {this.renderCollapseList(this.props.items)}
