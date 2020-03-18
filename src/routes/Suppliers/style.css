@@ -17,6 +17,7 @@ p {
 .icon {
   height: 24px;
   width: 24px;
+  margin-right: 0.25rem;
 }
 
 .mr-05 {
@@ -191,7 +192,7 @@ p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 36px;
   height: 20px;
   top: 4px;
 }
@@ -237,9 +238,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
 }
 
 /* Rounded sliders */
