@@ -77,7 +77,7 @@ class Suppliers extends React.Component {
           <div className="col-lg-1 hidden-md"></div>
           <div className="col-lg-2 col-md-3 col-sm-4">
             <img
-              src="https://img.icons8.com/ios/100/000000/organic-food.png"
+              src={require("../../images/organic-food.png")}
               className="icon mr-05 t-05"
               alt="Organic"
             />
@@ -108,10 +108,10 @@ class Suppliers extends React.Component {
             </label>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4">
-            <FontAwesomeIcon
-              className="mr-05"
-              icon={faDna}
-              size="md"
+            <img
+              src={require("../../images/dna.png")}
+              className="icon mr-05 t-05"
+              alt="Non-GMO"
             />
             {"Non-GMO: "}
             <label className="switch" name="nonGmo">
