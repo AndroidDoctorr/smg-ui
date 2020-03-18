@@ -60,83 +60,97 @@ class Suppliers extends React.Component {
     });
 
     return (
-      <div className="products">
-        <div className="products-header">
-          <h1>Available Products</h1>
-          <p>Select products available from reliable suppliers</p>
-        </div>
-        <div className="products-body">
-          <div className="products-listView">
-            <div className="products-filterContainer">
-              <div className="products-filterToggle">
-                <img
-                  src="https://img.icons8.com/ios/100/000000/organic-food.png"
-                  className="mr-05 t-05"
-                  alt="Organic"
-                  height={32}
-                  width={32}
-                />
-                {"Organic: "}
-                <label className="switch" name="organic">
-                  <input
-                    type="checkbox"
-                    onChange={e => this.setState({ isOrganicOnly: e.target.checked })}
-                    checked={this.state.isOrganicOnly}
-                  />
-                  <span className="slider round"></span>
-                </label>
-              </div>
-              <div className="products-filterToggle">
-                <img
-                  src={require("../../images/heirloom.png")}
-                  className="mr-05 t-05"
-                  alt="Heirloom"
-                  height={32}
-                  width={32}
-                />
-                {"Heirloom: "}
-                <label className="switch" name="heirloom">
-                  <input
-                    type="checkbox"
-                    onChange={e => this.setState({ isHeirloomOnly: e.target.checked })}
-                    checked={this.state.isHeirloomOnly}
-                  />
-                  <span className="slider round"></span>
-                </label>
-              </div>
-              <div className="products-filterToggle">
-                <FontAwesomeIcon
-                  className="mr-05"
-                  icon={faDna}
-                  size="lg"
-                />
-                {"Non-GMO: "}
-                <label className="switch" name="nonGmo">
-                  <input
-                    type="checkbox"
-                    onChange={e => this.setState({ isNonGmoOnly: e.target.checked })}
-                    checked={this.state.isNonGmoOnly}
-                  />
-                  <span className="slider round"></span>
-                </label>
-              </div>
-              {"Search: "}
-              <DebounceInput
-                className="products-textSearch"
-                minLength={2}
-                debounceTimeout={300}
-                onChange={e => this.setState({ searchText: e.target.value })}
-              />
-            </div>
-            {Object.keys(sortedCategories).map(key =>
-              <ProductCategory
-                key={key}
-                name={key}
-                items={sortedCategories[key]}
-                icon_url={categoryIcons[key]}
-              />
-            )}
+      <div className="products container">
+
+        {/* Header row */}
+        <div className="row mb-2">
+          <div className="col-lg-1 hidden-md"></div>
+          <div className="col-lg-10 col-md-12 products-header">
+            <h1>Available Products</h1>
+            <p>Select products available from reliable suppliers</p>
           </div>
+          <div className="col-lg-1 hidden-md"></div>
+        </div>
+
+        {/* Filter row */}
+        <div className="row">
+          <div className="col-lg-1 hidden-md"></div>
+          <div className="col-lg-2 col-md-3 col-sm-4">
+            <img
+              src="https://img.icons8.com/ios/100/000000/organic-food.png"
+              className="icon mr-05 t-05"
+              alt="Organic"
+            />
+            {"Organic: "}
+            <label className="switch" name="organic">
+              <input
+                type="checkbox"
+                onChange={e => this.setState({ isOrganicOnly: e.target.checked })}
+                checked={this.state.isOrganicOnly}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4">
+            <img
+              src={require("../../images/heirloom.png")}
+              className="icon mr-05 t-05"
+              alt="Heirloom"
+            />
+            {"Heirloom: "}
+            <label className="switch" name="heirloom">
+              <input
+                type="checkbox"
+                onChange={e => this.setState({ isHeirloomOnly: e.target.checked })}
+                checked={this.state.isHeirloomOnly}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4">
+            <FontAwesomeIcon
+              className="mr-05"
+              icon={faDna}
+              size="md"
+            />
+            {"Non-GMO: "}
+            <label className="switch" name="nonGmo">
+              <input
+                type="checkbox"
+                onChange={e => this.setState({ isNonGmoOnly: e.target.checked })}
+                checked={this.state.isNonGmoOnly}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+          <div className="col-lg-4 col-md-3 col-sm-12">
+            <DebounceInput
+              className="products-textSearch"
+              placeholder="Search..."
+              minLength={2}
+              debounceTimeout={300}
+              onChange={e => this.setState({ searchText: e.target.value })}
+            />
+          </div>
+          <div className="col-lg-1 hidden-md"></div>
+        </div>
+
+        {/* Body row */}
+        <div class="row">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-10 col-sm-12 products-body">
+            <div className="products-listView">
+              {Object.keys(sortedCategories).map(key =>
+                <ProductCategory
+                  key={key}
+                  name={key}
+                  items={sortedCategories[key]}
+                  icon_url={categoryIcons[key]}
+                />
+              )}
+            </div>
+          </div>
+          <div className="col-lg-1"></div>
         </div>
       </div>
     );
