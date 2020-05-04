@@ -4,9 +4,6 @@ import { DebounceInput } from 'react-debounce-input';
 import products from '../../utils/products';
 import { categoryIcons } from '../../utils/variables';
 import ProductCategory from './ProductCategory';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDna } from '@fortawesome/free-solid-svg-icons';
-
 
 class Suppliers extends React.Component {
   constructor(props) {
@@ -16,31 +13,71 @@ class Suppliers extends React.Component {
       isHeirloomOnly: false,
       isNonGmoOnly: false,
     };
+
+    this.nonGmoProducts = {};
+    this.heirloomProducts = {};
+    this.organicProducts = {};
+
+    this.ngAndHProducts = {};
+    this.ngAndOProducts = {};
+    this.hAndOProducts = {};
+
+    this.superProducts = {};
+
+    Object.keys(products).forEach(key => {
+      const item = products[key];
+      if (item.nonGmo) {
+        this.nonGmoProducts[key] = item;
+      }
+      if (item.organic) {
+        this.organicProducts[key] = item;
+      }
+      if (item.heirloom) {
+        this.heirloomProducts[key] = item;
+      }
+      if (item.nonGmo && item.organic) {
+        this.organicProducts[key] = item;
+      }
+      if (item.nonGmo && item.heirloom) {
+        this.ngAndHProducts[key] = item;
+      }
+      if (item.heirloom && item.organic) {
+        this.hAndOProducts[key] = item;
+      }
+    });
   }
 
   render() {
     // Categorize the products
-
-    // id: {
-    //   buy_url
-    //   description_long
-    //   program_name // True Leaf is the only one for now
-    // }
+    let selectedProducts;
+    if (this.state.isOrganicOnly && this.state.isHeirloomOnly && this.state.isNonGmoOnly) {
+      selectedProducts = this.superProducts;
+    } else if (this.state.isOrganicOnly && this.state.isHeirloomOnly) {
+      selectedProducts = this.hAndOProducts;
+    } else if (this.state.isHeirloomOnly && this.state.isNonGmoOnly) {
+      selectedProducts = this.ngAndHProducts;
+    } else if (this.state.isOrganicOnly && this.state.isNonGmoOnly) {
+      selectedProducts = this.ngAndOProducts;
+    } else if (this.state.isHeirloomOnly) {
+      selectedProducts = this.heirloomProducts;
+    } else if (this.state.isOrganicOnly) {
+      selectedProducts = this.organicProducts;
+    } else if (this.state.isNonGmoOnly) {
+      selectedProducts = this.nonGmoProducts;
+    } else {
+      selectedProducts = products;
+    }
 
     const categories = {};
-    Object.keys(products).forEach(key => {
-      const item = products[key];
+    Object.keys(selectedProducts).forEach(key => {
+      const item = selectedProducts[key];
       if (!item.categories) {
         return;
       }
       item.categories.split(" ").forEach(category => {
         // If item matches filter, or if no filters are applied, then show
-        if (
-          ((this.state.isOrganicOnly && item.organic) || !this.state.isOrganicOnly)
-          && ((this.state.isHeirloomOnly && item.heirloom) || !this.state.isHeirloomOnly)
-          && ((this.state.isNonGmoOnly && item.nonGmo) || !this.state.isNonGmoOnly)
-          && (!this.state.searchText
-            || item.name.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1)
+        if (!this.state.searchText
+            || item.name.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1
         ) {
           // Create the category if it does not exist, else add to it
           if (!!categories[category] && Object.keys(categories[category]).length > 0) {

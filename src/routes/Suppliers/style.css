@@ -6,7 +6,7 @@ body {
 h1 {
   color: #004400;
   margin: 1rem;
-  font-size: 24pt;
+  font-size: 24pt;vertical-align: 0.25em;
 }
 
 p {
@@ -66,10 +66,13 @@ p {
 }
 
 .products-textSearch {
+  float: right;
+  margin-bottom: 0.5rem;
   font-size: 16pt;
   border-radius: 5px;
   padding: 0.25rem;
-  width: 200px;
+  max-width: 250px;
+  min-width: 200px;
 }
 
 .products-listItem {
@@ -250,4 +253,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.svg-inline--fa {
+  vertical-align: 0.25em !important;
 }

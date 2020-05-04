@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactTooltip from 'react-tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt, faChevronCircleDown, faDna } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleDown, faDna } from '@fortawesome/free-solid-svg-icons';
 
 export default class ProductCategory extends React.Component {
   constructor(props) {
