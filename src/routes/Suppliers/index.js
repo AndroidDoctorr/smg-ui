@@ -174,8 +174,8 @@ class Suppliers extends React.Component {
 
         {/* Body row */}
         <div class="row">
-          <div className="col-lg-1"></div>
-          <div className="col-lg-10 col-sm-12 products-body">
+          <div className="col-lg-1 hidden-md"></div>
+          <div className="col-lg-10 col-md-12 products-body">
             <div className="products-listView">
               {Object.keys(sortedCategories).map(key =>
                 <ProductCategory
@@ -187,7 +187,7 @@ class Suppliers extends React.Component {
               )}
             </div>
           </div>
-          <div className="col-lg-1"></div>
+          <div className="col-lg-1 hidden-md"></div>
         </div>
       </div>
     );
