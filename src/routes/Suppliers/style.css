@@ -258,3 +258,7 @@ input:checked + .slider:before {
 .svg-inline--fa {
   vertical-align: 0.25em !important;
 }
+
+.test {
+
+}
