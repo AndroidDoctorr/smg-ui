@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/smg-ui/static/css/main.9fae951d.chunk.css",
-    "main.js": "/smg-ui/static/js/main.5dffa3ac.chunk.js",
-    "main.js.map": "/smg-ui/static/js/main.5dffa3ac.chunk.js.map",
+    "main.js": "/smg-ui/static/js/main.c711f641.chunk.js",
+    "main.js.map": "/smg-ui/static/js/main.c711f641.chunk.js.map",
     "runtime-main.js": "/smg-ui/static/js/runtime-main.34662ab6.js",
     "runtime-main.js.map": "/smg-ui/static/js/runtime-main.34662ab6.js.map",
     "static/css/2.b90ce945.chunk.css": "/smg-ui/static/css/2.b90ce945.chunk.css",
     "static/js/2.9e33e5d6.chunk.js": "/smg-ui/static/js/2.9e33e5d6.chunk.js",
     "static/js/2.9e33e5d6.chunk.js.map": "/smg-ui/static/js/2.9e33e5d6.chunk.js.map",
     "index.html": "/smg-ui/index.html",
-    "precache-manifest.e9cb7a31acea6c7e617b723bcb099c58.js": "/smg-ui/precache-manifest.e9cb7a31acea6c7e617b723bcb099c58.js",
+    "precache-manifest.d4e240bb8326ed890a5564bdadfa29e4.js": "/smg-ui/precache-manifest.d4e240bb8326ed890a5564bdadfa29e4.js",
     "service-worker.js": "/smg-ui/service-worker.js",
     "static/css/2.b90ce945.chunk.css.map": "/smg-ui/static/css/2.b90ce945.chunk.css.map",
     "static/css/main.9fae951d.chunk.css.map": "/smg-ui/static/css/main.9fae951d.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.b90ce945.chunk.css",
     "static/js/2.9e33e5d6.chunk.js",
     "static/css/main.9fae951d.chunk.css",
-    "static/js/main.5dffa3ac.chunk.js"
+    "static/js/main.c711f641.chunk.js"
   ]
 }
