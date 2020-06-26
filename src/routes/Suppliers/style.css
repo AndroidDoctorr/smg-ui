@@ -65,7 +65,7 @@ p {
   margin-right: 1rem;
 }
 
-.products-textSearch {
+input.products-textSearch {
   float: right;
   margin-bottom: 0.5rem;
   font-size: 16pt;
@@ -73,6 +73,9 @@ p {
   padding: 0.25rem;
   max-width: 250px;
   min-width: 200px;
+  line-height: inherit;
+  border: 2px inset rgb(118, 118, 118);
+  background-color: white;
 }
 
 .products-listItem {
@@ -128,22 +131,38 @@ p {
   float: right;
   margin: auto 1rem;
   padding: 0;
-  height: 2rem;
-  width: 2rem;
   border: none;
-  font-size: 24pt;
+  font-size: 32px;
   color: #008800;
   background-color: rgba(0, 0, 0, 0);
   transition: 0.1s ease-in-out;
   outline: none;
-}
-
-.products-listItemExpandButton--open {
+  height: 32px;
+  width: 32px;
+  line-height: 48px;
+  text-align: left;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.products-listItemExpandButton > svg {
+  font-size: 32px;
+  height: 32px;
+  line-height: 48px;
+  text-align: left;
+  vertical-align: 8px;
+  width: 32px;
+}
+
+.products-listItemExpandButton--open {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
   transition: 0.1s ease-in-out;
 }
 

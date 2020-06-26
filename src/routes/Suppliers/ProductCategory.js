@@ -107,7 +107,7 @@ export default class ProductCategory extends React.Component {
             {"(" + Object.keys(this.props.items).length + " products)"}
           </div>
           <div
-            className="products-listItemExpandButton products-listItemExpandButton--open"
+            className="products-listItemExpandButton"
             ref={this.toggleRef}
           >
             <FontAwesomeIcon icon={faChevronCircleDown} />
