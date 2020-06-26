@@ -31,6 +31,7 @@ export default class ProductCategory extends React.Component {
         />
         <div className="collapseList-itemName">
           {item.name}
+          {!!item.category_priority && " *"}
           {item.organic &&
             <img
               src="https://img.icons8.com/ios/100/000000/organic-food.png"
@@ -62,9 +63,22 @@ export default class ProductCategory extends React.Component {
   }
 
   renderCollapseList(items) {
+    const keys = Object.keys(items).sort((a, b) => {
+      const priorityA = items[a].category_priority;
+      const priorityB = items[b].category_priority;
+      if (!!priorityA && !!priorityB) {
+        return priorityA > priorityB ? 1 : -1
+      } else if (!!priorityA && !priorityB) {
+        return -1;
+      } else if (!priorityA && !!priorityB) {
+        return 1;
+      }
+      return 0;
+    })
+
     return (
       <div className="collapseList" ref={this.listRef}>
-        {Object.keys(items).map(key => this.renderProductListItem(items[key], key))}
+        {keys.map(key => this.renderProductListItem(items[key], key))}
       </div>
     );
   }
