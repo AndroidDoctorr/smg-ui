@@ -1,7 +1,2 @@
-Add priority to sort order within each category, 1-10 usually, then the rest sorted alphabetically
-
-Add price and company logo to list items in the order company logo, price, then icons, from right to left
-
-Override theme styling on WP - look for differences
 
 We will reverse-engineer social media posts at next meeting

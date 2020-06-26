@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import ReactTooltip from 'react-tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleDown, faDna } from '@fortawesome/free-solid-svg-icons';
+import { suppliers } from '../../utils/variables';
 
 export default class ProductCategory extends React.Component {
   constructor(props) {
@@ -32,6 +33,18 @@ export default class ProductCategory extends React.Component {
         <div className="collapseList-itemName">
           {item.name}
           {!!item.category_priority && " *"}
+        </div>
+        <div className="collapseList-itemInfo">
+          <img
+            src={suppliers[item.program_name].image}
+            className="products-listItemIcon"
+            alt={suppliers[item.program_name].name}
+            height={48}
+            width={48}
+          />
+          {" $" + item.price}
+        </div>
+        <div className="collapseList-itemInfo">
           {item.organic &&
             <img
               src="https://img.icons8.com/ios/100/000000/organic-food.png"

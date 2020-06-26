@@ -1,18 +1,15 @@
 export const suppliers = {
-  testSupplierA: {
-    name: "Test Supplier A",
-    image: require('../images/a.png'),
-    products: [
-      "testProd1",
-      "testProd2",
-    ],
+  trueleaf: {
+    name: "True Leaf Market",
+    image: require('../images/trueleaf.jpg'),
   },
-  testSupplierB: {
-    name: "Test Supplier B",
-    image: require('../images/b.png'),
-    products: [
-      "testProd2",
-    ],
+  bootstrap: {
+    name: "Bootstrap Farmer",
+    image: require('../images/bootstrap.jpg'),
+  },
+  smg: {
+    name: "Super Micro Greens",
+    image: require('../images/smg.jpg'),
   },
 };
 
@@ -42,4 +39,5 @@ export const categoryIcons = {
   "Trays": "https://cdn.trueleafmarket.com/products/growing-trays-10-by-20-holes/large-trays-with-holes.jpg",
   "Nutrients": "https://cdn.trueleafmarket.com/products/azomite-trace-mineral-fertilizer/azomite-2-lb-bag.jpg",
   "Mushrooms": "https://cdn.trueleafmarket.com/products/dehydrated-mushrooms-morel/4-oz-dried-morel.jpg",
+  "Equipment": "https://cdn.shopify.com/s/files/1/1338/7937/products/1020_Drop_Seeder_2000x.jpeg",
 }

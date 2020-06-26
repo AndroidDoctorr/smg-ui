@@ -209,6 +209,12 @@ input.products-textSearch {
   width: 100%;
 }
 
+.collapseList-itemInfo {
+  display: inline-block;
+  margin: auto 1rem;
+  width: 200px;
+}
+
 .collapseList-itemLink {
   /* float: right; */
   margin-left: 2rem;
