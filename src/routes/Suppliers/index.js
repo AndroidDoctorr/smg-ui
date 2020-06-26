@@ -101,17 +101,14 @@ class Suppliers extends React.Component {
 
         {/* Header row */}
         <div className="row mb-2">
-          <div className="col-lg-1 hidden-md"></div>
-          <div className="col-lg-10 col-md-12 products-header">
+          <div className="col-lg-12 products-header">
             <h1>Available Products</h1>
             <p>Select products available from reliable suppliers</p>
           </div>
-          <div className="col-lg-1 hidden-md"></div>
         </div>
 
         {/* Filter row */}
         <div className="row">
-          <div className="col-lg-1 hidden-md"></div>
           <div className="col-lg-2 col-md-3 col-sm-4">
             <img
               src={require("../../images/organic-food.png")}
@@ -160,7 +157,7 @@ class Suppliers extends React.Component {
               <span className="slider round"></span>
             </label>
           </div>
-          <div className="col-lg-4 col-md-3 col-sm-12">
+          <div className="col-lg-6 col-md-3 col-sm-12">
             <DebounceInput
               className="products-textSearch"
               placeholder="Search..."
@@ -169,13 +166,11 @@ class Suppliers extends React.Component {
               onChange={e => this.setState({ searchText: e.target.value })}
             />
           </div>
-          <div className="col-lg-1 hidden-md"></div>
         </div>
 
         {/* Body row */}
         <div class="row">
-          <div className="col-lg-1 hidden-md"></div>
-          <div className="col-lg-10 col-md-12 products-body">
+          <div className="col-lg-12 products-body">
             <div className="products-listView">
               {Object.keys(sortedCategories).map(key =>
                 <ProductCategory
@@ -187,7 +182,6 @@ class Suppliers extends React.Component {
               )}
             </div>
           </div>
-          <div className="col-lg-1 hidden-md"></div>
         </div>
       </div>
     );
